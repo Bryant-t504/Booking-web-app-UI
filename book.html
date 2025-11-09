@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookFlight - Flight Ticket Booking</title>
+  <link rel="stylesheet" href="booking.css" />
+</head>
+<body>
+  <div class="background">
+    <div class="booking-container">
+      <header>
+        <div class="logo">
+          <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" alt="plane logo">
+          <h2>BOOK<span>FLIGHT</span></h2>
+        </div>
+        <h3>FLIGHT TICKET BOOKING</h3>
+      </header>
+
+      <div class="tabs">
+        <button id="roundTripBtn" class="active">Round Trip</button>
+        <button id="oneWayBtn">One Way</button>
+        <button id="multiCityBtn">Multi City</button>
+      </div>
+
+      <form class="booking-form" id="bookingForm">
+        <div id="tripSection">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Departure City</label>
+              <input type="text" placeholder="Type Departure City">
+            </div>
+            <div class="form-group">
+              <label>Destination City</label>
+              <input type="text" placeholder="Type Destination City">
+            </div>
+          </div>
+
+          <div class="form-row date-row">
+            <div class="form-group">
+              <label>Depart Date</label>
+              <input type="date" id="departDate">
+            </div>
+            <div class="form-group" id="returnGroup">
+              <label>Return Date</label>
+              <input type="date" id="returnDate">
+            </div>
+            <div class="form-group">
+              <label>Class</label>
+              <select>
+                <option>Select</option>
+                <option>Economy</option>
+                <option>Business</option>
+                <option>First Class</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row checkbox-row">
+            <label><input type="checkbox" id="flexDate"> Flexible with current date</label>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Adult (12+ yrs)</label>
+              <div class="counter">
+                <button type="button" class="minus" data-type="adult">-</button>
+                <span id="adultCount">1</span>
+                <button type="button" class="plus" data-type="adult">+</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Child (2–11 yrs)</label>
+              <div class="counter">
+                <button type="button" class="minus" data-type="child">-</button>
+                <span id="childCount">0</span>
+                <button type="button" class="plus" data-type="child">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="multiCitySection" class="hidden">
+          <div id="cityContainer"></div>
+          <button type="button" class="add-destination" id="addDestinationBtn">+ Add Destination</button>
+        </div>
+
+        <button class="search-btn" type="submit">Search Flights</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>Copyright © 2019 Book Flight. All rights reserved.</p>
+      <p>Photo: pexels.com</p>
+    </footer>
+  </div>
+
+ script src="booking.js"></script>
+</body>
+</html>

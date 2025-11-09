@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Anywhere | Test</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-section">
+      <div class="logo">
+        <h1 class="text logo">TRAVEL</h1>
+        <img class="logo-img" src="/imgs/logo-icon.png" alt="travel logo">
+      </div>
+      <div class="nav">
+        <ul>
+          <a href="#">
+            <li class="active">HOME</li>
+          </a>
+          <a href="book.html">
+            <li>BOOK NOW</li>
+          </a>
+          <a href="about.html">
+            <li>ABOUT</li>
+          </a>
+          <a href="#services">
+            <li>SERVICES</li>
+          </a>
+          <a href="#contact">
+            <li>CONTACT US</li>
+          </a>
+        </ul>
+      </div>
+      <div class="sign">
+        <button class="log-in">Log in</button>
+        <button class="sign-in">Sign-in</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-page">
+    <div class="dashboard">
+      <div class="form-dash">
+        <form id="searchForm">
+          <div class="destination">
+            <label for="fromCity">From City</label>
+            <input type="text" id="fromCity" name="city" placeholder="Nairobi" required><br><br>
+            <label for="toCity">To City</label>
+            <input type="text" id="toCity" name="to-city" placeholder="Kitale" required><br><br>
+          </div>
+
+          <div class="time-ad">
+            <div class="depart-time">
+              <label for="departDate">Departure Date</label>
+              <input type="date" id="departDate" required>
+            </div>
+            <div class="arrival">
+              <label for="arrivalDate">Arrival Date</label>
+              <input type="date" id="arrivalDate" required>
+            </div>
+          </div>
+
+          <button type="submit" class="searchbtn">Search</button>
+        </form>
+</div>
+
+    </div>
+
+    <!-- ✨ Right Side Text Section -->
+    <div class="landing-text">
+      <h2>Explore the World with Us</h2>
+      <p>
+        Book your next trip in seconds.
+        We connect you to destinations across Kenya and beyond.
+        Fast, reliable, and affordable travel options.
+      </p>
+      <a href="about.html"><button class="explore-btn" >Learn More</button></a>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Why Travel With Us?</h2>
+    <div class="service-list">
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/481/481476.png" alt="Fast" />
+        <h3>Fast</h3>
+        <p>Quick booking and instant confirmations.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Reliable" />
+        <h3>Reliable</h3>
+        <p>Trusted by thousands of travelers daily.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/942/942799.png" alt="Safest" />
+        <h3>Safest</h3>
+        <p>Secure trips with verified partners.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" alt="Convenient" />
+        <h3>Convenient</h3>
+        <p>Flexible options to suit your travel plans.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="destinations">
+    <h2>Attractive Destinations</h2>
+
+    <!-- Around the City -->
+    <h3 class="dest-subtitle">Around the City</h3>
+    <div class="carousel">
+      <button class="carousel-btn prev">&#10094;</button>
+      <div class="carousel-track">
+        <div class="destination-card">
+          <img src="/imgs/12 Top-Rated Tourist Attractions & Things to Do in Nairobi.jpeg"
+            alt="Nairobi National Park">
+          <div class="dest-info">
+            <h3>Nairobi National Park</h3>
+            <p>Wildlife at the edge of the city.</p>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="/imgs/Giraffe centre Nairobi Kenya.jpeg"
+            alt="Giraffe Center">
+          <div class="dest-info">
+            <h3>Giraffe Center</h3>
+            <p>Meet and feed Rothschild giraffes.</p>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="/imgs/Karura Forest (2025) - All You Need to Know BEFORE You Go (with Reviews).jpeg"
+            alt="Karura Forest">
+          <div class="dest-info">
+            <h3>Karura Forest</h3>
+            <p>Green trails & waterfalls for hiking.</p>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="/imgs/Maasai Market.jpeg"
+            alt="Maasai Market">
+          <div class="dest-info">
+            <h3>Maasai Market</h3>
+            <p>Handmade crafts & cultural art.</p>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="/imgs/d57e4e08-7320-49b9-bce6-e2c493d79d6d.jpeg"
+            alt="Kenya National Museum">
+          <div class="dest-info">
+            <h3>National Museum</h3>
+            <p>History & culture of Kenya preserved.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+
+    <!-- Around the Country -->
+    <h3 class="dest-subtitle">Around the Country</h3>
+    <div class="carousel">
+      <button class="carousel-btn prev">&#10094;</button>
+      <div class="carousel-track">
+        <div class="destination-card">
+          <img src="/imgs/The Great Migration _ Maasai Mara.jpeg"
+            alt="Maasai Mara">
+          <div class="dest-info">
+            <h3>Maasai Mara</h3>
+            <p>Great Migration & Big Five safaris.</p>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="/imgs/Mombasa_.jpeg"
+            alt="Mombasa">
+          <div class="dest-info">
+            <h3>Mombasa Coast</h3>
+            <p>White sandy beaches & Swahili culture.</p>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="/imgs/Mount Kenya Poster.jpeg"
+            alt="Mount Kenya">
+          <div class="dest-info">
+            <h3>Mount Kenya</h3>
+            <p>Adventurous treks & glaciers.</p>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="/imgs/🐘 Explore the Heart of Kenya’s Wilderness – 3 Days of Adventure at Lake Nakuru and Lake Naivasha!.jpeg"
+            alt="Lake Naivasha">
+          <div class="dest-info">
+            <h3>Lake Naivasha</h3>
+            <p>Boat rides & hippo spotting.</p>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="/imgs/Diani Beach ~ Kenia 🐚.jpeg"
+            alt="Diani Beach">
+          <div class="dest-info">
+            <h3>Diani Beach</h3>
+            <p>Tropical paradise with palm trees.</p>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="/imgs/Hell's Gate_ Adventure in Kenya's Geothermal Wonder.jpeg"
+            alt="Hell's Gate">
+          <div class="dest-info">
+            <h3>Hell's Gate</h3>
+            <p>Rock climbing, gorges & wildlife.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <h2>What Our Customers Say</h2>
+    <div class="review-carousel">
+      <button class="review-btn prev">&#10094;</button>
+      <div class="review-track">
+        <div class="review-card">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="customer">
+          <h3>Sarah W.</h3>
+          <p class="review-text">“Travel Anywhere made booking super easy. Nairobi trip was smooth, and I loved the
+            experience!”</p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="review-card">
+          <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="customer">
+          <h3>James M.</h3>
+          <p class="review-text">“Fast, reliable, and affordable service. I booked my Mombasa holiday stress-free!”</p>
+          <div class="stars">⭐⭐⭐⭐</div>
+        </div>
+        <div class="review-card">
+          <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="customer">
+          <h3>Amina K.</h3>
+          <p class="review-text">“Loved the user-friendly booking dashboard. Highly recommend to travelers.”</p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="review-card">
+          <img src="https://randomuser.me/api/portraits/men/25.jpg" alt="customer">
+          <h3>Brian O.</h3>
+          <p class="review-text">“From Nairobi to Maasai Mara, everything was arranged perfectly. I’ll use this again!”
+          </p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="review-card">
+          <img src="https://randomuser.me/api/portraits/women/19.jpg" alt="customer">
+          <h3>Lucy N.</h3>
+          <p class="review-text">“Convenient, safe, and smooth. Definitely the best travel booking platform I’ve used.”
+          </p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      <button class="review-btn next">&#10095;</button>
+
+      <!-- Dot indicators -->
+      <div class="review-dots"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Reach out for bookings, inquiries, or feedback.</p>
+
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p><i class="fa-solid fa-phone"></i> +254 712 345 678</p>
+        <p><i class="fa-solid fa-envelope"></i> support@travelanywhere.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
+
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- About -->
+      <div class="footer-about">
+        <h3>Travel Anywhere</h3>
+        <p>Your trusted travel partner across Kenya & beyond.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-phone"></i> +254 712 345 678</p>
+        <p><i class="fa-solid fa-envelope"></i> support@travelanywhere.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
+      </div>
+
+      <!-- Socials -->
+      <div class="footer-socials">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Travel Anywhere. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
