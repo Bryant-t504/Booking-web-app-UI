@@ -1,279 +1,225 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  background: #f5f6fa;
-  color: #333;
-}
 
-header {
-  display: flex;
-  align-items: center;
-  padding: 15px;
-  background: linear-gradient(135deg, #0077b6, #00b4d8);
-  color: #fff;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
 
-header .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+    body, html {
+      height: 100%;
+    }
 
-header img {
-  width: 40px;
-}
+    .background {
+      background: url('/imgs/bus.jpg') 
+                  no-repeat center center/cover;
+      background-blend-mode: color;
+      background-color: #4f4e4e8b;   
+      background-attachment: fixed;
+      background-position: cover;         
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-.booking-container {
-  max-width: 400px;
-  margin: 30px auto;
-  padding: 20px;
-  background: #fff;
-  color: #333;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
+    .booking-container {
+      /*background:linear-gradient(135deg, #0066ff, #00c6ff);*/
+      backdrop-filter: blur(10px);
+      padding: 2rem 2.5rem;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 750px;
+      color: white;
+      box-shadow: 0 4px 20px rgba(0, 0, 1, 1);
+    }
 
-.booking-form label {
-  display: block;
-  margin-top: 15px;
-}
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
 
-.booking-form input,
-.booking-form button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-}
+    .logo img {
+      width: 30px;
+    }
 
-.booking-form button {
-  background: linear-gradient(135deg, #0077b6, #00b4d8);
-  color: #fff;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: transform 0.2s ease, opacity 0.3s ease;
-}
+    .logo h2 {
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+    }
 
-.booking-form button:hover {
-  transform: translateY(-2px);
-  opacity: 0.9;
-}
+    .logo span {
+      color: #ffcc00;
+    }
 
-.results {
-  display: none;
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
-}
+    header h3 {
+      margin-top: 10px;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
 
-.ticket-option {
-  background: #fff;
-  margin-bottom: 20px;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+    }
 
-.ticket-option:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
+    .tabs button {
+      background: transparent;
+      border: 1px solid white;
+      color: rgb(251, 251, 246);
+      padding: 0.5rem 1.2rem;
+      margin: 0 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
 
-.ticket-option h3 {
-  margin: 0 0 10px;
-  color: #0077b6;
-}
+    .tabs button.active {
+      background: linear-gradient(135deg, #0066ff, #00c6ff);
+      color: #333;
+      border:0;
+      font-weight: 600;
+    }
 
-.ticket-option p {
-  margin: 5px 0;
-  color: #555;
-}
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
 
-.ticket-price {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #00b894;
-}
+    .form-group {
+      flex: 1;
+      min-width: 150px;
+    }
 
-/* Modal */
-.modal {
-  display: none;
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 0.9rem;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+    }
+
+    .counter {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .counter button {
+      width: 25px;
+      height: 25px;
+      background: linear-gradient(135deg, #0066ff, #00c6ff);
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .search-btn {
+      width: 100%;
+      background:  linear-gradient(135deg, #0066ff, #00c6ff);
+      border: none;
+      padding: 0.8rem;
+      border-radius: 5px;
+      color: #333;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: ease-in-out 1s;
+    }
+
+    .search-btn:hover {
+      background: #ffd633d1;
+    }
+
+    .add-destination {
+      background: none;
+      border: 1px dashed #ffcc00;
+      color: #ffcc00;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      margin-top: -5px;
+    }
+
+    footer {
+      color: white;
+      font-size: 0.8rem;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    /* === Back Arrow Button === */
+.back-arrow {
   position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-content {
-  background: #fff;
-  padding: 30px;
-  border-radius: 15px;
-  width: 400px;
-  position: relative;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 0.4s ease;
-}
-
-.modal-content h2 {
-  margin-top: 0;
-  color: #0077b6;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 10px;
-}
-
-.close {
-  position: absolute;
-  right: 15px;
-  top: 10px;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-#ticketSummary {
-  margin-bottom: 20px;
-  font-size: 0.95rem;
-}
-
-#paymentForm input,
-#paymentForm button {
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-}
-
-.inline-fields {
-  display: flex;
-  gap: 10px;
-}
-
-#paymentForm button {
-  background: linear-gradient(135deg, #00b894, #00cec9);
-  color: white;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.2s ease, opacity 0.3s ease;
-}
-
-#paymentForm button:hover {
-  transform: translateY(-2px);
-  opacity: 0.9;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.billing-modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}
-
-.billing-content {
-  background: #fff;
-  border-radius: 15px;
-  padding: 30px;
-  width: 450px;
-  max-width: 95%;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-  animation: fadeInUp 0.4s ease;
-}
-
-.close-btn {
-  float: right;
+  top: 1.5rem;
+  left: 2.3rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: #0088ff;
   font-size: 1.8rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 50%;
   cursor: pointer;
-  color: #333;
+  z-index: 1000;
+  transition: 0.3s ease;
+  backdrop-filter: blur(5px);
+  line-height: 1;
 }
 
-.ticket-details {
-  margin: 15px 0;
-  background: #f8f9fa;
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 0.95rem;
-  line-height: 1.6;
+.back-arrow:hover {
+  background: #ffcc00;
+  color: #000;
+  transform: scale(1.05);
 }
 
-.payment-options {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin: 20px 0;
+
+/* =========================================
+   RESPONSIVE DESIGN (DON'T MODIFY ABOVE)
+   ========================================= */
+
+/* Tablet Screens */
+@media (max-width: 992px) {
+  .booking-container{
+    width: 95%;
+  }
+    
 }
 
-.payment-options label {
-  font-size: 1rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: #f1f1f1;
-  padding: 10px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+/* Mobile Screens */
+@media (max-width: 768px) {
+  .booking-container{
+    width: 96%;
+  }
 }
 
-.payment-options label:hover {
-  background: linear-gradient(45deg, #0077b6, #9b59b6);
-  color: #fff;
-}
-
-.payment-options i {
-  font-size: 1.4rem;
-}
-
-.payment-inputs input {
-  width: 100%;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
-  font-size: 1rem;
-}
-
-.confirm-btn {
-  width: 100%;
-  padding: 12px;
-  background: linear-gradient(45deg, #0077b6, #9b59b6);
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.confirm-btn:hover {
-  transform: translateY(-3px);
-  background: linear-gradient(45deg, #9b59b6, #0077b6);
+/* Very Small Phones */
+@media (max-width: 480px) {
+    .booking-container{
+      width: 95%;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    header h3{
+      margin-top: 20px;
+    }
+   
 }

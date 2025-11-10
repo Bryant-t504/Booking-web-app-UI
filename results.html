@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flight Results - BookFlight</title>
+  <link rel="stylesheet" href="results.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <div class="background">
+    <!-- Back Arrow Button -->
+<div class="back-arrow" onclick="goBack()">
+  <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+</div>
+
+    <div class="booking-container" id="resultsContainer">
+      <h2>Available Flights</h2>
+      <div id="flightSummary"></div>
+
+      <!-- Heading intentionally placed ABOVE the cards -->
+      <h3 class="ticket-heading">Choose a Ticket Category</h3>
+
+      <div id="ticketOptions"></div>
+    </div>
+  </div>
+  <script src="results.js"></script>
+</body>
+</html>

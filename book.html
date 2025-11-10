@@ -10,11 +10,16 @@
   <div class="background">
     <div class="booking-container">
       <header>
+        <!-- Back Arrow Button -->
+<div class="back-arrow" onclick="goBack()">
+  &#8592;
+</div>
+
         <div class="logo">
           <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" alt="plane logo">
-          <h2>BOOK<span>FLIGHT</span></h2>
+          <h2>BOOK<span> RIDE </span></h2>
         </div>
-        <h3>FLIGHT TICKET BOOKING</h3>
+        <h3>BUS TICKET BOOKING</h3>
       </header>
 
       <div class="tabs">
@@ -28,33 +33,33 @@
           <div class="form-row">
             <div class="form-group">
               <label>Departure City</label>
-              <input type="text" placeholder="Type Departure City">
+              <input type="text" id="departureCity" placeholder="Type Departure City">
             </div>
             <div class="form-group">
               <label>Destination City</label>
-              <input type="text" placeholder="Type Destination City">
+              <input type="text" id="destinationCity" placeholder="Type Destination City">
             </div>
           </div>
 
           <div class="form-row date-row">
             <div class="form-group">
-              <label>Depart Date</label>
-              <input type="date" id="departDate">
+                <label>Depart Date</label>
+                <input type="date" id="departDate">
+              </div>
+              <div class="form-group" id="returnGroup">
+                <label>Return Date</label>
+                <input type="date" id="returnDate">
+              </div>
+              <div class="form-group">
+                <label>Class</label>
+                <select id="travelClass">
+                  <option>Select</option>
+                  <option>Economy</option>
+                  <option>Business</option>
+                  <option>First Class</option>
+                </select>
+              </div>
             </div>
-            <div class="form-group" id="returnGroup">
-              <label>Return Date</label>
-              <input type="date" id="returnDate">
-            </div>
-            <div class="form-group">
-              <label>Class</label>
-              <select>
-                <option>Select</option>
-                <option>Economy</option>
-                <option>Business</option>
-                <option>First Class</option>
-              </select>
-            </div>
-          </div>
 
           <div class="form-row checkbox-row">
             <label><input type="checkbox" id="flexDate"> Flexible with current date</label>
@@ -85,16 +90,16 @@
           <button type="button" class="add-destination" id="addDestinationBtn">+ Add Destination</button>
         </div>
 
-        <button class="search-btn" type="submit">Search Flights</button>
+        <button class="search-btn" type="submit"  id="submit">Search Ride</button>
       </form>
     </div>
 
     <footer>
-      <p>Copyright © 2019 Book Flight. All rights reserved.</p>
-      <p>Photo: pexels.com</p>
+      <p>2025 Book Ride. All rights reserved.</p>
+      <p>UI Design</p>
     </footer>
   </div>
 
- script src="booking.js"></script>
+  <script src=".booking.js"></script>
 </body>
 </html>

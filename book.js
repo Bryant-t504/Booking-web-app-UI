@@ -49,6 +49,6 @@ document.getElementById('bookingForm').addEventListener('submit', function (e) {
     document.getElementById("returnDate").value = savedTrip.arrivalDate;
   }
 
-localStorage.removeItem("tripDetails");
+
 
 

@@ -83,4 +83,31 @@ document.querySelectorAll('.review-carousel').forEach(carousel => {
 });
 
 
+  document.getElementById("searchForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const fromCity = document.getElementById("fromCity").value.trim();
+    const toCity = document.getElementById("toCity").value.trim();
+    const departDate = document.getElementById("departDate").value;
+    const arrivalDate = document.getElementById("arrivalDate").value;
+
+    if (fromCity && toCity && departDate && arrivalDate) {
+      const tripData = { fromCity, toCity, departDate, arrivalDate };
+      localStorage.setItem("tripDetails", JSON.stringify(tripData));
+      window.location.href = "book.html";
+    } else {
+      alert("Please fill in all fields before searching.");
+    }
+  });
+
+
+  const nav = document.querySelector(".nav");
+
+nav.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+
+
+
+
 

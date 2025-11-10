@@ -2,13 +2,13 @@
 .about-hero {
   position: relative;
   height: 90vh;
-  background: url("/booking/imgs/bus.jpg") center/cover no-repeat;
+  background-image: url('imgs/bus.jpg');
   background-blend-mode: color;
-  background-color: rgba(0, 0, 0, 0.445);
+  background-color: rgba(70, 69, 69, 0.172);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #f1eeee;
+  color: #f8f8f8;
 }
 .about-hero .overlay {
   position: absolute;
