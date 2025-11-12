@@ -13,7 +13,7 @@
 .about-hero .overlay {
     position: absolute;
     inset: 0;
-    background-image: url(/imgs/bus.jpg);
+    background-image: url("./imgs/bus.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

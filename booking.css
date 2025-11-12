@@ -11,7 +11,7 @@
     }
 
     .background {
-      background: url('/imgs/bus.jpg') 
+      background: url("./imgs/bus.jpg") 
                   no-repeat center center/cover;
       background-blend-mode: color;
       background-color: #4f4e4e8b;   
