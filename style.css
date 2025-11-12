@@ -52,6 +52,7 @@ body {
     list-style: none;
     display: flex;
     gap: 2rem;
+    margin-right: 350px;
 }
 
 .nav a {
@@ -82,45 +83,13 @@ body {
     width: 100%;
 }
 
-/* ===== Buttons ===== */
-.sign button {
-    border: none;
-    outline: none;
-    padding: 0.6rem 1.2rem;
-    margin-left: 10px;
-    border-radius: 8px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.log-in {
-    background: transparent;
-    color: white;
-    border: 2px solid white;
-}
-
-.log-in:hover {
-    background: white;
-    color: #0066ff;
-}
-
-.sign-in {
-    background: #ffdf00;
-    color: #333;
-}
-
-.sign-in:hover {
-    background: #ffd000;
-}
-
 /* ===== Landing Page Section ===== */
 .landing-page {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 4rem 6rem;
-    background-image: url(/imgs/bus.jpg);
+    background-image: url("imgs/bus.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -601,7 +570,6 @@ label {
     transform: translateY(-4px) scale(1.2);
     /* float + zoom */
     background: linear-gradient(45deg, #0077b6, #9b59b6);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -625,8 +593,7 @@ label {
     transform: translateY(-6px) scale(1.2);
     /* float + zoom */
     background: linear-gradient(45deg, #0077b6, #9b59b6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;    -webkit-text-fill-color: transparent;
     /* gradient fills the icon */
 }
 
@@ -705,93 +672,7 @@ label {
     color: #aaa;
 }
 
-/* Extra About Page tweaks inside style.css */
 
-/* About Hero */
-.about-hero {
-    height: 60vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.about-hero .overlay {
-    position: absolute;
-    inset: 0;
-    background-image: url(/imgs/plane1.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: color;
-    background-color: #2f2f3083;
-}
-
-.about-hero .hero-text {
-    position: relative;
-    text-align: center;
-    color: #02f0f0;
-}
-
-/* About section layout */
-.about-section {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    padding: 60px 10%;
-}
-
-.about-section .text {
-    flex: 1;
-}
-
-.about-section .image {
-    flex: 1;
-}
-
-.about-section img {
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: var(--shadow);
-}
-
-/* Cards reuse same .card but adjust icons */
-.cards-section {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 60px 10%;
-}
-
-.cards-section .card i {
-    font-size: 2rem;
-    color: var(--primary);
-    margin-bottom: 15px;
-}
-
-/* Team section */
-.about-team {
-    text-align: center;
-    padding: 60px 10%;
-}
-
-.team-cards {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.team-cards .card.team {
-    width: 220px;
-    padding: 20px;
-}
-
-.team-cards img {
-    border-radius: 50%;
-    width: 100%;
-    margin-bottom: 15px;
-}
 
 
 /* =========================================
@@ -808,6 +689,7 @@ label {
 
     .nav ul {
         gap: 1.2rem;
+        margin-right: 0;
     }
 
     .landing-page {
@@ -862,7 +744,6 @@ label {
     .nav::before {
         content: "\2630"; /* hamburger icon */
         font-size: 1.9rem;
-        color: ;
         cursor: pointer;
         display: block;
     }
@@ -898,6 +779,13 @@ label {
 @media (max-width: 480px) {
     .hero {
         padding: 0.9rem 1.2rem;
+    }
+     .logo h1{
+        font-size: 23px;
+    }
+    .logo img{
+        width:40px;
+        height:40px;
     }
 
     .sign button {
