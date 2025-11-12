@@ -89,7 +89,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 4rem 6rem;
-    background-image: url("imgs/bus.jpg");
+    background-image: url("./imgs/bus.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
